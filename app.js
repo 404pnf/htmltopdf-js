@@ -21,9 +21,12 @@ app.get('/', function (req, res) {
             footerCenter: "页脚也可以用中文",
             pageSize: "A4",
         };
-    wkhtmltopdf(s, options, function (code, signal) {
-        res.download(filename, "huhu.pdf");
-    });
+    // 让用户下载pdf
+    // wkhtmltopdf(s, options, function (code, signal) {
+    //     res.download(filename, "huhu.pdf");
+    // });
+    // 直接让用户预览生成的pdf
+    wkhtmltopdf(s).pipe(res);
 });
 
 app.listen(3000, function () {

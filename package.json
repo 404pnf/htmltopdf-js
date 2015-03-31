@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "express": "^4.12.3",
+    "node-uuid": "^1.4.3",
     "uuid": "^2.0.1",
     "wkhtmltopdf": "^0.1.5"
   },
