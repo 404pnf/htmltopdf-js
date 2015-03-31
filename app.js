@@ -15,7 +15,7 @@ var fs = require('fs'),
 
 app.get('/', function (req, res) {
     var s = '<meta charset="utf-8"><h1>呼呼haha</h1>',
-        filename = uuid.v4(),
+        filename = uuid.v4() + '.pdf',
         options = {
             output: filename,
             footerCenter: "页脚也可以用中文",
