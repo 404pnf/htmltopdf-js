@@ -6,6 +6,7 @@ var fs = require('fs'),
 
 // ## 安装wkhtmltopdf
 // http://wkhtmltopdf.org/
+
 // ## 如何使用wkhtmltopdf
 // https://github.com/devongovett/node-wkhtmltopdf
 // 使用方法
@@ -21,10 +22,12 @@ app.get('/', function (req, res) {
             footerCenter: "页脚也可以用中文",
             pageSize: "A4",
         };
+
     // 让用户下载pdf
     // wkhtmltopdf(s, options, function (code, signal) {
     //     res.download(filename, "huhu.pdf");
     // });
+
     // 直接让用户预览生成的pdf
     wkhtmltopdf(s).pipe(res);
 });
