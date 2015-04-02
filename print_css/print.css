@@ -1,0 +1,2 @@
+h1 {display: none;}
+div:not(.entry) {display: none;}
