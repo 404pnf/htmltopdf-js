@@ -1,16 +1,22 @@
 h1 {display: none;}
 
-div:not(.entry) {display: none;}
+/*div:not(.entry) {display: none;}*/
 
 @page :pseudo-class {
     size: A4;
-    margin:2cm;
+
 }
 body {
-    margin:2cm;
+    
 }
 
 /* 打印时不要在词条中间分页 */
-p {
+
+entry {
+    clear: both;
+    margin: 0 auto 30px auto;
+    display: block;
     page-break-inside : avoid;
+    line-height: 170%;
+    width: 18cm;
 }
