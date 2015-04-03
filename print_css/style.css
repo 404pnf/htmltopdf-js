@@ -1,0 +1,250 @@
+/******************xslt转换对应的样式****************************/
+.Entry {
+    border: 1px blue solid;
+    margin: 5px;
+}
+
+/*词头部分*/
+.Head {
+    font-weight : bold;
+    font-size: 1.1em;
+    color : rgb(0, 0, 255);
+}
+/*词性*/
+.Pos {
+    font-style : italic;
+    margin-left:1em;
+    margin-right:1em;
+}
+/*上标*/
+.Sup {
+    font-size : 10px;
+}
+/*拼音*/
+.Pinyin {
+    color: #666666;
+    display: inline-block;
+    margin-right:1em;
+}
+/*笔画*/
+.bihua{
+    color: #666666;
+    display: inline-block;
+    margin-right:1em;
+}
+/*部首*/
+.bushou{
+    color: #666666;
+    display: inline-block;
+    margin-right:1em;
+}
+/*字型*/
+.zixing{
+    color: #666666;
+    display: inline-block;
+    margin-right:1em;
+}
+
+/*音标*/
+.Phonetic {
+    font-family : "lucida sans unicode",sans-serif;
+    margin: 0.8em;
+}
+/*下标*/
+.Sub {
+    font-size : 10px;
+}
+/*语法说明*/
+.Grammar {
+    color : rgb(0, 0, 155);
+}
+/*语体风格*/
+.Style {
+    color : rgb(0, 0, 155);
+}
+/*缩写*/
+.Abbr {
+    color : rgb(0, 0, 155);
+}
+/*全称*/
+.Full {
+    color : rgb(0, 0, 155);
+}
+/*复数*/
+.Plural {
+
+}
+/*单数*/
+.Singular {
+
+}
+/*属格*/
+.Genitive {
+
+}
+/*标记*/
+.Note {
+    display:block;
+    margin-top:1em;
+}
+/*语种*/
+.Lang {
+
+}
+/*来源*/
+.Source {
+    color: #959595;
+    font-size: 12px;
+    text-decoration: none;
+}
+/*学科、术语*/
+.Field {
+    color : rgb(0, 0, 155);
+}
+/*符号*/
+.Symbol {
+    font-weight : bold;
+}
+/*词条词语*/
+.HeadWord {
+    font-weight : bold;
+    font-size: 1.1em;
+    color : rgb(0, 0, 255);
+}
+
+/* 儿化 */
+.Er { font-size: 0.8em; }
+
+/*粗体词语*/
+.BoldWord {
+    font-weight : bold;
+}
+
+/*粗体词语*/
+.Phrase {
+    font-weight : bold;
+    color: red;
+}
+
+/*义项*/
+.Sense {
+    display:block;
+    margin-top:1em;
+    margin-left:1em;
+}
+/*指示标记*/
+.Signpost {
+    background-color : rgb(200, 200, 200);
+    font-weight : bold;
+}
+
+/*不同词性释义范畴*/
+.Category {
+    display:block;
+    margin-top:1em;
+    margin-left:1em;
+}
+
+/*例句*/
+.Example {
+    display:block;
+    margin-top:1em; 
+    margin-left:1em;
+    background-color: #DCDCDC;
+}
+
+/* 例句 */
+.Ex {
+    display: block;
+}
+
+/* 译文 */
+.Trans {
+    margin-left : 1em;
+}
+
+/* 斜体 */
+.Italic {
+    font-style : italic;
+}
+
+/*另见*/
+.See {
+    display: block;
+}
+/*同*/
+.Same {
+}
+/*义项编号*/
+.SenseId {
+    font-weight : bold;
+}
+/*自我引用*/
+.Self {
+    font-weight : bold;
+}
+/*名词单数第二格*/
+.SingularGenetiv {
+    font-style : italic;
+}
+/*动词构成完成时的方式*/
+.SeinHaben {
+    font-style : italic;
+}
+
+/*习惯短语*/
+.Idiom{
+    color: #35A1D4;
+    outline: 0 none;
+}
+
+h {
+    color:red;
+    font-weight:bold;
+}
+
+.ImageZaoZi {
+    width: 14px;
+    height: 14px;
+}
+
+/*麦米高阶释义前条目*/
+.Menu {
+	font-weight: bold;
+    color:  #000088;
+}
+
+.para{
+	 display:block;
+	 border: 1px solid gray;
+	 margin-top:0.5em; 
+}
+.boxtitle{
+	font-weight: bold;
+	display: block;
+}
+.boxtr{
+	margin-left:  10px;
+}
+.boxtd{
+	font-weight: bold;
+}
+
+/*朗文当代高阶英语词典 特例*/
+.SupSenseId{
+	font-weight: bold;
+    color:  #000088;
+}
+
+.usage{
+	 display:block;
+	 border: 1px solid gray;
+	 margin-top:0.5em; 
+}
+
+.Uage{
+	display:block;
+	font-weight: bold;
+	color:  #000088;
+}
+
