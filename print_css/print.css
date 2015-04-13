@@ -13,6 +13,7 @@ body {
 /* 打印时不要在词条中间分页 */
 
 entry {
+    font-size: 0.7em; 
     clear: both;
     margin: 0 auto 30px auto;
     display: block;
