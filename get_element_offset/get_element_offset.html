@@ -1,0 +1,40 @@
+<html>
+<meta charset="utf-8">
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<body>
+<ul>
+    <li> item 1 </li>
+    <li> item 1 </li>
+    <ul>
+        <li id="foo"> foo item 1 </li>
+        <li> item 1 </li>
+        <li> item 1 </li>
+    </ul>
+    <li> item 1 </li>
+    <li> item 1 </li>
+    <li> item 1 </li>
+</ul>
+</body>
+<script>
+    // 现将元素高度设定大一点，太矮鼠标一动就出去了
+    $("li").css("line-height", "50px")
+    // 住函数
+    $("li").mousemove(function(e){
+        var Y = e.pageY,
+            parentOffset = $(this).parent().offset().top,
+            offset = $(this).offset().top,
+            eleHeight = $(this).height(),
+            middle = eleHeight / 2,
+            gap = Y - offset,
+            front = gap < middle;
+
+        // console.log(Y, parentOffset, offset, eleHeight);
+        // 如果在元素的上半部分，就是true，反之，false；
+        console.log(front);
+
+    });
+    // reference
+    // http://stackoverflow.com/questions/4249648/jquery-get-mouse-position-within-an-element
+    // http://stackoverflow.com/questions/5758090/dragging-a-div-in-jquery-fine-when-mouse-is-slow-but-fails-on-fast-mouse-move
+</script>
+</html>
